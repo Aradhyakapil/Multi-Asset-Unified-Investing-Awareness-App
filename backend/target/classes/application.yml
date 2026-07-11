@@ -1,0 +1,48 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: wealthwise-backend
+
+  # H2 Database (dev mode — no Docker needed)
+  datasource:
+    url: jdbc:h2:mem:wealthwise;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.H2Dialect
+
+  # Cache configuration (in-memory for dev)
+  cache:
+    type: simple
+
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+    default-property-inclusion: non_null
+
+# JWT Configuration
+app:
+  jwt:
+    secret: wealthwise-super-secret-key-that-is-at-least-256-bits-long-for-hs256
+    expiration-ms: 86400000  # 24 hours
+
+# Logging
+logging:
+  level:
+    com.wealthwise: INFO
+    org.springframework.security: WARN
