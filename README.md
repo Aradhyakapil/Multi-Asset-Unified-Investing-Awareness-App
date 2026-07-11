@@ -2,6 +2,11 @@
 
 A full-stack fintech application that consolidates fragmented Indian investment portfolios across brokers (Zerodha, Groww, NSDL), enables alternate asset discovery (REITs, InvITs, Bonds), and provides AI-powered suitability analysis — all in one premium dark-mode interface.
 
+
+
+https://github.com/user-attachments/assets/52c11620-0dbc-4614-9ede-cb52794e3e12
+
+
 ## 🏗️ Architecture
 
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/7feea8e0-11a1-40a2-a93f-c29be4d51cb7" />
