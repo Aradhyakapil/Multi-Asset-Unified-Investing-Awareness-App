@@ -4,18 +4,8 @@ A full-stack fintech application that consolidates fragmented Indian investment 
 
 ## 🏗️ Architecture
 
-```
-┌─────────────────────────────────────────────────────┐
-│   Next.js 16 Frontend (Port 3000)                   │
-│   React + Zustand + Recharts + TailwindCSS          │
-└─────────────────┬───────────────────────────────────┘
-                  │ REST API (JWT Auth)
-┌─────────────────▼───────────────────────────────────┐
-│   Spring Boot 3.5 Backend (Port 8080)               │
-│   JPA + H2 (dev) / PostgreSQL (prod)                │
-│   Spring Security + Cache + Async                   │
-└─────────────────────────────────────────────────────┘
-```
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/7feea8e0-11a1-40a2-a93f-c29be4d51cb7" />
+
 
 ## 🚀 Quick Start
 
